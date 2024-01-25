@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.split-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background: url('textile_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+#image-container {
+    display: flex;
+    flex-direction: column; /* Display images in a column */
+    align-items: center;
+    justify-content: space-around; /* Distribute space evenly between images */
+    height: 100%;
+}
+
+
+#image-container img {
+    width: 380px; /* Set the fixed width for images */
+    height: 380px; /* Set the fixed height for images */
+    margin-bottom: 10px; /* Set the gap between images */
+}
+
+
+.right-side {
+    flex: 1;
+    padding:330px 40px 0px 40px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+h1, p {
+    width: 500px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    background-color: #fff;
+}

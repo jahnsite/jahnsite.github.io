@@ -22,13 +22,13 @@ function updateImages(material, method, texture) {
 
     // Create Image objects to preload the images
     const materialImage = new Image();
-    materialImage.src = `images/material_${material.toLowerCase()}.jpg`;
+    materialImage.src = `material_${material.toLowerCase()}.jpg`;
 
     const methodImage = new Image();
-    methodImage.src = `images/method_${method.toLowerCase()}.jpg`;
+    methodImage.src = `method_${method.toLowerCase()}.jpg`;
 
     const textureImage = new Image();
-    textureImage.src = `images/texture_${texture.toLowerCase()}.jpg`;
+    textureImage.src = `texture_${texture.toLowerCase()}.jpg`;
 
     // Clear previous content and append the new images
     imageContainer.innerHTML = '';
